@@ -11,9 +11,9 @@ def subtract_percentage(MSRP, Discount):
 def get_values():
     try:
         # Retrieve the values entered by the user
-        MSRP = int(entry_MSRP.get())  
-        Discount = int(entry_DIS.get())  
-        Cost = int(entry_COST.get())
+        MSRP = float(entry_MSRP.get())  
+        Discount = float(entry_DIS.get())  
+        Cost = float(entry_COST.get())
 
         VASCUPP_Price = subtract_percentage(MSRP, Discount)
 
